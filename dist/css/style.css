@@ -1,5 +1,6 @@
+/* BASIC */
+/* VARS */
 /* FONTS */
-
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?wq1rpp');
@@ -10,13 +11,13 @@
     font-weight: normal;
     font-style: normal;
   }
-  
-  [class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
+    font-feature-settings: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -25,65 +26,68 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-  .icon-align-center:before {
+.icon-align-center:before {
     content: "\f037";
   }
-  .icon-life-bouy:before {
+.icon-life-bouy:before {
     content: "\f1cd";
   }
-  .icon-life-buoy:before {
+.icon-life-buoy:before {
     content: "\f1cd";
   }
-  .icon-life-ring:before {
+.icon-life-ring:before {
     content: "\f1cd";
   }
-  .icon-life-saver:before {
+.icon-life-saver:before {
     content: "\f1cd";
   }
-  .icon-support:before {
+.icon-support:before {
     content: "\f1cd";
   }
-  .icon-search:before {
+.icon-search:before {
     content: "\e902";
   }
-  .icon-mobile:before {
+.icon-mobile:before {
     content: "\e958";
   }
-  .icon-hour-glass:before {
+.icon-hour-glass:before {
     content: "\e979";
   }
-  .icon-clipboard:before {
+.icon-clipboard:before {
     content: "\e9b8";
   }
-  .icon-cloud-check:before {
+.icon-cloud-check:before {
     content: "\e9c4";
   }
-  .icon-mail4:before {
+.icon-mail4:before {
     content: "\ea86";
   }
-  .icon-facebook2:before {
+.icon-facebook2:before {
     content: "\ea91";
   }
-  .icon-instagram:before {
+.icon-instagram:before {
     content: "\ea92";
   }
-  .icon-whatsapp:before {
+.icon-whatsapp:before {
     content: "\ea93";
   }
-  .icon-youtube:before {
+.icon-youtube:before {
     content: "\ea9d";
   }
-  .icon-chevron-left:before {
+.icon-chevron-left:before {
     content: "\e900";
   }
-  .icon-chevron-right:before {
+.icon-chevron-right:before {
     content: "\e901";
   }
-  .icon-open-book:before {
+.icon-open-book:before {
     content: "\e903";
   }
-  .icon-shield:before {
+.icon-shield:before {
     content: "\e904";
   }
-  
+/* ANIMATIONS */
+/* HEADER */
+/* NAV */
+/* HERO */
+/* FOOTER */
