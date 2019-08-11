@@ -1,1 +1,11 @@
 /* VARS */
+:root{
+    --color_brand: #FDD20B;
+    --color_secondary: #DB474D;
+
+    --color_grayScale1: #1E1E1E;
+    --color_grayScale2: #474747;
+    --color_grayScale3: #888888;
+    --color_grayScale4: #BBBBBB;
+    --color_grayScale5: #ECECEC;
+}
