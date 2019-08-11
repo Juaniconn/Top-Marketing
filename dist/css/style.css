@@ -7,6 +7,7 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
 *{
     box-sizing: border-box;
@@ -127,14 +128,17 @@ h1,h2,h3,h4,h5,h6,p{
 /* ANIMATIONS */
 /* HEADER */
 .header{
-    background-color: #1E1E1E;
+    background-color: #071013;
     width: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    position: absolute
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999
 }
 .header .logo{
 
@@ -180,12 +184,83 @@ h1,h2,h3,h4,h5,h6,p{
     }
 /* NAV */
 /* HERO */
+.hero{
+    background-color: #FDD20B;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.hero .hero_backgroundFig1{
+        width: 90rem;
+        height: 60rem;
+        position: absolute;
+        top: 0;
+        background-image: url(../images/svg/hero_backgroundFig1.svg);
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+.hero .msg{
+        z-index: 1;
+        position: relative;
+        padding: 2rem 2.5rem
+    }
+.hero .msg h1{
+            font-size: 5rem;
+            font-weight: 900;
+            color: #ECECEC;
+        }
+.hero .msg p{
+            font-size: 3rem;
+            font-weight: bold;
+            color: #888888;
+        }
+.hero .msg::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40%;
+        height: 20%;
+        border-left: .5rem solid #FDD20B;
+        border-top: .5rem solid #FDD20B;
+    }
+.hero .msg::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 40%;
+        height: 20%;
+        border-bottom: .5rem solid #FDD20B;
+        border-right: .5rem solid #FDD20B;
+    }
+.hero .arrows{
+        position: absolute;
+        bottom: 3rem;
+        right: 5rem;
+        height: 4rem;
+        width: 8rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        background-color: #1E1E1E
+    }
+.hero .arrows .icon{
+            font-size: 3rem;
+            color: #ECECEC;
+            cursor: pointer;
+        }
 /* INFO */
-/* HEADER INFO */
-/* TOP MARKETING */
-/* WEB DESING */
-/* BRANDING */
-/* MARKETING */
-/* PAQUETES */
-/* CONTACT */
+.info{
+    display: auto;
+}
 /* FOOTER */

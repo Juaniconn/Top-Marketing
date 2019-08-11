@@ -1,5 +1,9 @@
 /* INFO */  
 
+.info{
+    display: auto;
+}
+
 @import "header_info.css";
 @import "top_marketing.css";
 @import "web_design.css";

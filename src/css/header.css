@@ -1,14 +1,16 @@
 /* HEADER */
 
 .header{
-    background-color: var(--color_grayScale1);
+    background-color: var(--color_dark);
     width: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    position: absolute;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 
     & .logo{
 
