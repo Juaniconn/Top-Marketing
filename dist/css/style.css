@@ -126,6 +126,58 @@ h1,h2,h3,h4,h5,h6,p{
   }
 /* ANIMATIONS */
 /* HEADER */
+.header{
+    background-color: #1E1E1E;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute
+}
+.header .logo{
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row
+    }
+.header .logo a{
+            width: 4rem;
+            height: 4rem;
+            background-image: url(../images/logo.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 1rem;
+        }
+.header .logo p{
+            font-size: 1.6rem;
+            color: #ECECEC;
+            font-weight: bold;
+        }
+.header .ham{
+        width: 5.5rem;
+        height: 4.5rem;
+        margin: .5rem 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-left: .1rem solid #ECECEC;
+        cursor: pointer
+    }
+.header .ham .line{
+            width: 100%;
+            height: .3rem;
+            background: #ECECEC;
+        }
+.header .nav{
+        display: none;
+    }
 /* NAV */
 /* HERO */
 /* INFO */
