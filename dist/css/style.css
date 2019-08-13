@@ -135,8 +135,7 @@ h1,h2,h3,h4,h5,h6,p{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9999
 }
@@ -164,8 +163,8 @@ h1,h2,h3,h4,h5,h6,p{
 .header .ham{
         width: 5.5rem;
         height: 4.5rem;
-        margin: .5rem 0;
-        padding: 1rem;
+        margin: .5rem 1rem .5rem 0;
+        padding: 1rem 1rem 1rem 1.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -186,7 +185,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* HERO */
 .hero{
     background-color: #FDD20B;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0;
     position: absolute;
@@ -198,8 +197,8 @@ h1,h2,h3,h4,h5,h6,p{
     flex-direction: column
 }
 .hero .hero_backgroundFig1{
-        width: 90rem;
-        height: 60rem;
+        width: 96rem;
+        height: 64rem;
         position: absolute;
         top: 0;
         background-image: url(../images/svg/hero_backgroundFig1.svg);
@@ -260,7 +259,192 @@ h1,h2,h3,h4,h5,h6,p{
             cursor: pointer;
         }
 /* INFO */
+/* HEADER INFO */
+.header_info{
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1
+}
+.header_info ul{
+        display: inherit;
+        flex-direction: inherit;
+        justify-content: space-between;
+        padding: 0 3rem;
+        align-items: center;
+        padding: 0 4rem;
+        margin-left: 30%;
+        width: 100%;
+        height: 6rem;
+        background-color: #071013
+    }
+.header_info ul div li{
+                color: #1E1E1E;
+                list-style: none
+                
+            }
+.header_info ul div li a{
+                    background-color: #ECECEC;
+                    text-decoration: none;
+                    padding: 1rem 2rem;
+                    color: #1E1E1E;
+                    font-size: 1.1rem;
+                }
+.header_info ul div:nth-of-type(1){
+            display: inherit;
+            flex-direction: inherit;
+            align-items: inherit 
+        }
+.header_info ul div:nth-of-type(1) li:not(:first-child) a{
+                    background-color: #1E1E1E;
+                    color: #ECECEC;
+                }
+.header_info ul div:nth-of-type(1) li:not(:first-child) a:hover{
+                    transition: .5s;
+                    background-color: #ECECEC;
+                    color: #1E1E1E;
+                }
+.header_info ul div:nth-of-type(2) li a{
+                    background-color: #1E1E1E;
+                    color: #ECECEC;
+                }
+.header_info ul div:nth-of-type(2) li a:hover{
+                    transition: .5s;
+                    background-color: #ECECEC;
+                    color: #1E1E1E;
+                }
+/* TOP MARKETING */
+.top_marketing{
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+.top_marketing .leftside_info{
+        background-image: url(../images/background_1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 30%;
+        height: 100vh
+    }
+.top_marketing .leftside_info .container{
+            background-color: #1E1E1E;
+            opacity: 0.85;
+            height: 100vh;
+        }
+.top_marketing .leftside_info p{
+            position: absolute;
+            left: 5rem;
+            bottom: 5rem;
+            font-size: 4rem;
+            font-weight: bold;
+            color: #ECECEC;
+            width: calc(100% - 10rem);
+        }
+.top_marketing .leftside_info p::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 30%;
+            height: 30%;
+            padding: 1rem;
+            border-right: .75rem solid #FDD20B;
+            border-bottom: .75rem solid #FDD20B;
+        }
+.top_marketing .rightside_info{
+        width: 70%;
+        height: 100vh;
+        background-color: #FAFAFA
+    }
+.top_marketing .rightside_info .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 0 4rem;
+            width: 100%;
+            height: 100%
+        }
+.top_marketing .rightside_info .container p:nth-of-type(1){
+                margin-top: calc(6rem + 4rem);
+                font-size: 2rem;
+                color: #ECECEC;
+                background-color: #1E1E1E;
+                padding: 1.5rem 3rem;
+                font-weight: bold;
+            }
+.top_marketing .rightside_info .container h2{
+                font-size: 4rem;
+            }
+.top_marketing .rightside_info .container .desc{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: row;
+                height: 60%;
+                margin-bottom: 4rem
+            }
+.top_marketing .rightside_info .container .desc figure{
+                    width: 60%;
+                    height: 100%;
+
+                    background-image: url(../images/background_2.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+.top_marketing .rightside_info .container .desc .desc_info{
+                    margin-left: 4rem;
+                    width: 100%;
+                    height: 100%
+                }
+.top_marketing .rightside_info .container .desc .desc_info p:nth-of-type(1){
+                        padding: 0 0 2rem 0;
+                        background-color: transparent;
+                        margin: 0;
+                        color: #1E1E1E;
+                        font-size: 2rem;
+                    }
+.top_marketing .rightside_info .container .desc .desc_info h3{
+                        font-size: 2.5rem;
+                        color: #FDD20B;
+                        margin-bottom: 2rem;
+                    }
+.top_marketing .rightside_info .container .desc .desc_info p:nth-of-type(2){
+                        font-size: 1.5rem;
+                    }
+/* WEB DESING */
+.web_design{
+    display: none;
+}
+/* BRANDING */
+.branding{
+    display: none;
+}
+/* MARKETING */
+.marketing{
+    display: none;
+}
+/* PAQUETES */
+.paquetes{
+    display: none;
+}
+/* CONTACT */
+.contact{
+    display: none;
+}
 .info{
-    display: auto;
+   /* position: absolute;*/
+    top: 0;
+    height: 200vh;
+    width: 100%;
 }
 /* FOOTER */
