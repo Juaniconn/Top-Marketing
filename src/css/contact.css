@@ -1,5 +1,156 @@
 /* CONTACT */
 
-.contact{
-    display: none;
+.info{
+    & .contact{
+        display: flex;
+    
+        & .leftside_info{
+            background-image: url(../images/background_11.jpg);
+            background-position: -10rem center;
+    
+            & p{
+                & small{
+                    font-size: 3rem;
+                    font-weight: normal;
+                }
+            }
+        }
+    
+        & .rightside_info{
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            flex-direction: column;
+            & .container{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                & p{
+                    margin-bottom: 4rem;
+                }
+                
+                & h2{
+                    margin-bottom: 4rem;
+                    height: auto;
+                }
+                & .desc{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    margin: 0;
+                    min-width: 100%;
+                    & .desc_map{
+                        width: 50%;
+                        & #map{
+                            width: 100%;
+                            height: 30rem;
+                        }
+    
+                        & p{
+                            background-color: transparent;
+                            padding: 0;
+                            color: var(--color_grayScale1);
+                            margin: 0;
+                            font-weight: normal;
+                            font-size: 1.5rem;
+                            margin-top: 2rem;
+                        }
+                    }
+                    & .desc_contact{
+                        width: 50%;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        margin-left: 4rem;
+                        & .desc_info{
+                            margin: 0 0 4rem 0;
+                            & h3{
+                                color: var(--color_grayScale1);
+                                font-size: 2rem;
+                                margin-bottom: 1rem;
+                            }
+                            & i{
+                                color: var(--color_grayScale1);
+                                font-size: 2rem;
+        
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-direction: row;
+                                margin-bottom: 0.5rem;
+                            }
+                            
+                            & i:after{
+                                font-size: 1.5rem;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: normal;
+                                margin-left: 1rem;
+                            }
+        
+                            & i:nth-of-type(1):after{
+                                content: "+52 656 617 1771";
+        
+                            }
+                            & i:nth-of-type(2):after{
+                                content: "correo@topmarketing.com";
+                            }
+                        }
+
+                        & .desc_social{
+                            margin: 0;
+                            & h3{
+                                font-size: 2rem;
+                                margin-bottom: 1rem;
+                            }
+                            & div{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-direction: row;
+                                & a{
+                                    padding: 2rem;
+                                    background-color: var(--color_brand);
+                                    color: var(--color_white);
+                                    text-decoration: none;
+                                    & i:nth-of-type(1):after{
+                                        content: none;
+                                    }
+                                    & i:nth-of-type(2):after{
+                                        content: none;
+                                    }
+    
+                                    & i{
+                                        font-size: 2rem;
+                                    }
+
+                                }
+                                & a:not(:last-child){
+                                    margin-right: 2rem;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+            & footer{
+                width: 100%;
+                height: 6rem;
+                background-color: var(--color_dark);
+                
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                & p{
+                    margin: 0 0 0 4rem;
+                    width: 100%;
+                    color: var(--color_grayScale5);
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
 }

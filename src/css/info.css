@@ -1,5 +1,4 @@
-/* INFO */  
-
+@import "body_info.css";
 @import "header_info.css";
 @import "top_marketing.css";
 @import "web_design.css";
@@ -7,10 +6,3 @@
 @import "marketing.css";
 @import "paquetes.css";
 @import "contact.css";
-
-.info{
-   /* position: absolute;*/
-    top: 0;
-    height: 200vh;
-    width: 100%;
-}
