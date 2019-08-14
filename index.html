@@ -202,8 +202,9 @@
                     <p>Contact</p>
                     <h2>Ponte en contacto con nosotros</h2>
                     <div class="desc">
-                        <div>
+                        <div class="desc_map">
                             <div id="map"></div>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.130479949401!2d-106.43039938488887!3d31.739639281297666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75bf071ae6ca7%3A0xe8e945994c408532!2sValle+de+Ju%C3%A1rez+6445%2C+San+Lorenzo%2C+32320+Cd+Ju%C3%A1rez%2C+Chih.!5e0!3m2!1ses-419!2smx!4v1565832105335!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                             <p>Avenida Valle de Juárez 6445 Ciudad Juárez Mexico 32320</p>
                         </div>
                         <div class="desc_contact">
@@ -230,14 +231,19 @@
             </div>
         </div>
     </section>
-    <script>
-        var map, maker;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8
-            });
-        }
+    <script>   
+      function initMap() {
+        var location = {lat: 31.739480, lng: -106.428205};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          zoom: 19
+        });
+        var marker = new google.maps.Marker({
+          map: map,
+          position: location,
+          title: 'Top Marketing'
+        });
+      }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8RvOajDPAWwaSmF_GIIjVZWVvB4HiUUU&callback=initMap"async defer></script>
 </body>

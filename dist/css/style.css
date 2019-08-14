@@ -509,20 +509,21 @@ h1,h2,h3,h4,h5,h6,p{
             }
 .info .contact .rightside_info .container .desc{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     align-items: flex-start;
                     flex-direction: row;
-                    margin: 0
+                    margin: 0;
+                    min-width: 100%
                 }
-.info .contact .rightside_info .container .desc div:nth-of-type(1){
-                        width: 140%
+.info .contact .rightside_info .container .desc .desc_map{
+                        width: 50%
                     }
-.info .contact .rightside_info .container .desc div:nth-of-type(1) #map{
+.info .contact .rightside_info .container .desc .desc_map #map{
                             width: 100%;
                             height: 30rem;
                             background-color: red;
                         }
-.info .contact .rightside_info .container .desc div:nth-of-type(1) p{
+.info .contact .rightside_info .container .desc .desc_map p{
                             background-color: transparent;
                             padding: 0;
                             color: #1E1E1E;
@@ -531,23 +532,23 @@ h1,h2,h3,h4,h5,h6,p{
                             font-size: 1.5rem;
                             margin-top: 2rem;
                         }
-.info .contact .rightside_info .container .desc div:nth-of-type(2){
-                        width: 100%;
+.info .contact .rightside_info .container .desc .desc_contact{
+                        width: 50%;
                         display: flex;
                         align-items: flex-start;
                         flex-direction: column;
                         margin-left: 4rem
     
                     }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_info{
+.info .contact .rightside_info .container .desc .desc_contact .desc_info{
                             margin: 0 0 4rem 0
                         }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_info h3{
+.info .contact .rightside_info .container .desc .desc_contact .desc_info h3{
                                 color: #1E1E1E;
                                 font-size: 2rem;
                                 margin-bottom: 1rem;
                             }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_info i{
+.info .contact .rightside_info .container .desc .desc_contact .desc_info i{
                                 color: #1E1E1E;
                                 font-size: 2rem;
         
@@ -557,49 +558,49 @@ h1,h2,h3,h4,h5,h6,p{
                                 flex-direction: row;
                                 margin-bottom: 0.5rem;
                             }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_info i:after{
+.info .contact .rightside_info .container .desc .desc_contact .desc_info i:after{
                                 font-size: 1.5rem;
                                 font-family: 'Raleway', sans-serif;
                                 font-weight: normal;
                                 margin-left: 1rem;
                             }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_info i:nth-of-type(1):after{
+.info .contact .rightside_info .container .desc .desc_contact .desc_info i:nth-of-type(1):after{
                                 content: "+52 656 617 1771";
         
                             }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_info i:nth-of-type(2):after{
+.info .contact .rightside_info .container .desc .desc_contact .desc_info i:nth-of-type(2):after{
                                 content: "correo@topmarketing.com";
                             }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social{
+.info .contact .rightside_info .container .desc .desc_contact .desc_social{
                             margin: 0
                         }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social h3{
+.info .contact .rightside_info .container .desc .desc_contact .desc_social h3{
                                 font-size: 2rem;
                                 margin-bottom: 1rem;
                             }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social div{
+.info .contact .rightside_info .container .desc .desc_contact .desc_social div{
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
                                 flex-direction: row
                             }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social div a{
+.info .contact .rightside_info .container .desc .desc_contact .desc_social div a{
                                     padding: 2rem;
                                     background-color: #FDD20B;
                                     color: #FAFAFA;
                                     text-decoration: none
 
                                 }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social div a i:nth-of-type(1):after{
+.info .contact .rightside_info .container .desc .desc_contact .desc_social div a i:nth-of-type(1):after{
                                         content: none;
                                     }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social div a i:nth-of-type(2):after{
+.info .contact .rightside_info .container .desc .desc_contact .desc_social div a i:nth-of-type(2):after{
                                         content: none;
                                     }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social div a i{
+.info .contact .rightside_info .container .desc .desc_contact .desc_social div a i{
                                         font-size: 2rem;
                                     }
-.info .contact .rightside_info .container .desc div:nth-of-type(2) .desc_social div a:not(:last-child){
+.info .contact .rightside_info .container .desc .desc_contact .desc_social div a:not(:last-child){
                                     margin-right: 2rem;
                                 }
 .info .contact .rightside_info footer{

@@ -36,12 +36,13 @@
                 height: auto;
                 & .desc{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     align-items: flex-start;
                     flex-direction: row;
                     margin: 0;
-                    & div:nth-of-type(1){
-                        width: 140%;
+                    min-width: 100%;
+                    & .desc_map{
+                        width: 50%;
                         & #map{
                             width: 100%;
                             height: 30rem;
@@ -58,8 +59,8 @@
                             margin-top: 2rem;
                         }
                     }
-                    & div:nth-of-type(2){
-                        width: 100%;
+                    & .desc_contact{
+                        width: 50%;
                         display: flex;
                         align-items: flex-start;
                         flex-direction: column;
