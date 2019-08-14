@@ -2,8 +2,7 @@
 
 .header_info{
     position: absolute;
-    bottom: 0;
-    height: 100vh;
+    bottom: calc(calc(50%) - 6rem);
     width: 100%;
     display: flex;
     flex-direction: row;
