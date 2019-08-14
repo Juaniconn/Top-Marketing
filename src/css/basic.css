@@ -21,24 +21,6 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 
-/* .leftside_info.a{
-    height: 200px;
-    width: 500px;
-    position: relative;
-    background: cyan;
-    background-image: url(../images/background_1.jpg);
-    background-position: center;
-    background-origin: content-box;
-    background-size: cover;
-}   
-
-.leftside_info.a::before{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    content: "";
-    background: black;
-    opacity: 0.2;
-} */
+#map{
+    height: 100%;
+}
